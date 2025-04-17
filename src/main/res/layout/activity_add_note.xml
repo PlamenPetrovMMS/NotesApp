@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/backgroundColor"
+    tools:context=".AddNoteActivity"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noteTitle"
+        android:hint="@string/noteTitleHint"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/addnote_background"
+
+        android:maxLines="1"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteTitle"
+        android:lines="24"
+        android:id="@+id/noteDescription"
+        android:gravity="top"
+        android:padding="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/addnote_background"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/noteCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="?attr/buttonsColor"
+        app:tint="@color/white"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:src="@drawable/baseline_cancel_24"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/noteSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="?attr/buttonsColor"
+            app:tint="@color/white"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            android:src="@drawable/baseline_done_24"
+
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            />
+
+</RelativeLayout>

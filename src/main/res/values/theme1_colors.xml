@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme1_backgroundColor">#CAE0BC</color>
+    <color name="theme1_boxColor1">#6E8E59</color>
+    <color name="theme1_buttonColor">#780C28</color>
+    <color name="theme1_noteColor">#EAFAEA</color>
+</resources>

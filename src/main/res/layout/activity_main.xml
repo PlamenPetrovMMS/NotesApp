@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="?attr/backgroundColor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainTitle"
+
+        android:text="@string/mainTitle"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="?attr/newFont"
+
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+
+        android:background="@drawable/box_shape"
+
+        android:gravity="center"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainTitle"
+        android:layout_above="@id/addButton"
+        android:id="@+id/recyclerView"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/noteSettingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:tint="@color/white"
+        android:backgroundTint="?attr/buttonsColor"
+
+        android:clickable="true"
+        android:focusable="true"
+
+        android:src="@drawable/baseline_settings_24"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:tint="@color/white"
+        android:backgroundTint="?attr/buttonsColor"
+
+        android:src="@drawable/baseline_add_24"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    >
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editButton"
+        android:text="@string/editButton"
+        android:textStyle="bold"
+
+        android:backgroundTint="?attr/buttonsColor"
+
+        android:layout_alignStart="@+id/deleteButton"
+        android:layout_alignEnd="@+id/deleteButton"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteButton"
+
+        android:layout_below="@+id/editButton"
+
+        android:text="@string/deleteButton"
+        android:textStyle="bold"
+
+        android:backgroundTint="?attr/buttonsColor"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exportButton"
+
+        android:layout_below="@+id/deleteButton"
+
+        android:text="@string/exportButton"
+        android:textStyle="bold"
+
+        android:backgroundTint="?attr/buttonsColor"
+        />
+
+</RelativeLayout>

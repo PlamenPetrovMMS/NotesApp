@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NewNotes</string>
+    <string name="mainTitle">NOTES</string>
+    <string name="settingsTitle">SETTINGS</string>
+    <string name="addButton">+</string>
+    <string name="noteTitleHint">Title</string>
+    <string name="noteSaveButton">SAVE</string>
+    <string name="noteCancelButton">CANCEL</string>
+
+    <string name="editButton">EDIT</string>
+    <string name="deleteButton">DELETE</string>
+    <string name="exportButton">EXPORT</string>
+
+    <string name="changeThemeTitle">THEME COLOR</string>
+    <string name="changeFontTitle">FONT</string>
+</resources>

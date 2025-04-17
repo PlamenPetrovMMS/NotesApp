@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backgroundColor" format="color"/>
+    <attr name="buttonsColor" format="color"/>
+    <attr name="boxBackgroundColor" format="color"/>
+    <attr name="noteColor" format="color"/>
+
+    <attr name="newFont" format="reference"/>
+</resources>

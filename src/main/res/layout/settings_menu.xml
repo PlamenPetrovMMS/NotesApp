@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:rowCount="3"
+    android:columnCount="3"
+    android:padding="20dp"
+    android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/changeColorTitle"
+
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+
+            android:text="@string/changeThemeTitle"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/colorGrid"
+            android:layout_centerHorizontal="true"
+
+            android:layout_below="@+id/changeColorTitle"
+            >
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/themeColorButton1"
+                    android:layout_row="0"
+                    android:layout_column="0"
+
+                    android:layout_margin="5dp"
+
+                    android:backgroundTint="@color/theme1_backgroundColor"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/themeColorButton2"
+
+                    android:layout_row="0"
+                    android:layout_column="1"
+
+                    android:layout_margin="5dp"
+
+                    android:backgroundTint="@color/theme2_buttonColor"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/themeColorButton3"
+
+                    android:layout_row="0"
+                    android:layout_column="2"
+
+                    android:layout_margin="5dp"
+
+                    android:backgroundTint="@color/theme3_backgroundColor"
+
+                    android:clickable="true"
+                    android:focusable="true"
+                    />
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/changeFontTitle"
+
+            android:layout_below="@+id/colorGrid"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            android:padding="10dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+
+            android:text="@string/changeFontTitle"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/italicFontButton"
+
+            android:layout_below="@+id/changeFontTitle"
+
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+
+            android:layout_alignStart="@+id/changeFontTitle"
+            android:layout_alignEnd="@+id/changeFontTitle"
+
+            android:backgroundTint="?attr/buttonsColor"
+
+            android:textStyle="italic"
+            android:text="ITALIC"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/boldFontButton"
+
+            android:layout_below="@+id/italicFontButton"
+
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+
+            android:layout_alignStart="@+id/changeFontTitle"
+            android:layout_alignEnd="@+id/changeFontTitle"
+
+            android:backgroundTint="?attr/buttonsColor"
+
+            android:text="BOLD"
+            android:textStyle="bold"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/normalFontButton"
+
+            android:layout_below="@+id/boldFontButton"
+
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+
+            android:layout_alignStart="@+id/changeFontTitle"
+            android:layout_alignEnd="@+id/changeFontTitle"
+
+            android:backgroundTint="?attr/buttonsColor"
+
+            android:text="Normal"
+            android:textStyle="normal"
+            />
+
+</RelativeLayout>

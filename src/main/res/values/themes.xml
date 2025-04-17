@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NewNotes" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+<!--  SPECIFY NEW THEMES AND THEIR ATTRIBUTE/ELEMENT COLORS  -->
+    <style name="Theme.NewNotes.Theme1" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="backgroundColor">@color/theme1_backgroundColor</item>
+        <item name="buttonsColor">@color/theme1_buttonColor</item>
+        <item name="boxBackgroundColor">@color/theme1_boxColor1</item>
+        <item name="noteColor">@color/theme1_noteColor</item>
+    </style>
+    <style name="Theme.NewNotes.Theme2" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="backgroundColor">@color/theme2_backgroundColor</item>
+        <item name="buttonsColor">@color/theme2_buttonColor</item>
+        <item name="boxBackgroundColor">@color/theme2_boxColor1</item>
+        <item name="noteColor">@color/theme2_noteColor</item>
+    </style>
+    <style name="Theme.NewNotes.Theme3" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="backgroundColor">@color/theme3_backgroundColor</item>
+        <item name="buttonsColor">@color/theme3_buttonColor</item>
+        <item name="boxBackgroundColor">@color/theme3_boxColor1</item>
+        <item name="noteColor">@color/theme3_noteColor</item>
+    </style>
+
+<!--  THE SAME DOES NOT WORK FOR THE FONTS  -->
+
+
+    <style name="Theme.NewNotes" parent="Base.Theme.NewNotes" />
+</resources>
