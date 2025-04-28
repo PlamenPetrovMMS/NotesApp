@@ -1,0 +1,57 @@
+======= activity_main.xml =======
+
+<ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/recyclerView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+
+        android:visibility="invisible"
+        />
+
+
+
+
+======= MainActivity.java =======
+
+Handler handler;
+ProgressBar progressBar;
+
+
+// INSIDE onCreate METHOD:
+
+// BY GETTING THE MAIN LOOPER, WE NOW CAN POST TASKS TO THE MAIN THREAD MESSAGE QUEUE AND MAKE CHANGES TO ELEMENTS
+// INITIALIZED INSIDE IT (TextView and etc.)
+handler = new Handler(getApplicationContext().getMainLooper());
+progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+handler.post(new Runnable() {
+    @Override
+    public void run() {
+        progressBar.setVisibility(ProgressBar.VISIBLE);
+        Toast.makeText(MainActivity.this, "Loading data...", Toast.LENGTH_SHORT).show();
+    }
+});
+new Thread(new Runnable() {
+    @Override
+    public void run() {
+        try{
+            Thread.sleep(3000);
+
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    progressBar.setVisibility(ProgressBar.INVISIBLE);
+                    Toast.makeText(MainActivity.this, "Data Loaded", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+        }catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+}).start();
